@@ -59,21 +59,16 @@
         <span>Chat on WhatsApp</span>
       </a>
       <a class="btn ghost" href="#explore">See the trails</a>
-      <label class="btn ghost btn-upload-header" title="Upload new header image file">
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
-        <span>Upload "header image.jpg"</span>
-        <input type="file" id="headerImgInput" accept="image/*" style="display:none">
-      </label>
     </div>
   </div>
 </header>
 
 <section id="cafe">
   <div class="wrap">
-    <h2 style="font-size:clamp(2rem,5vw,3.4rem);max-width:18ch">Sit down. The view does the rest.</h2>
-    <p class="lede" style="margin-top:1rem">Start with coffee on the veranda, stay for the art, then walk to the caves or pitch a tent before dark.</p>
+    <h2 class="reveal" style="font-size:clamp(2rem,5vw,3.4rem);max-width:18ch">Sit down. The view does the rest.</h2>
+    <p class="lede reveal stagger-1" style="margin-top:1rem">Start with coffee on the veranda, stay for the art, then walk to the caves or pitch a tent before dark.</p>
     <div class="pillars">
-      <article class="pillar">
+      <article class="pillar reveal stagger-1">
         <img src="images/bar.jpg" alt="Shelves of whiskey bottles and glassware at the cafe bar" loading="lazy">
         <div>
           <h3>Artisanal cafe</h3>
@@ -81,7 +76,7 @@
           <a class="btn" href="#book">View menu</a>
         </div>
       </article>
-      <article class="pillar" id="camp">
+      <article class="pillar reveal stagger-2" id="camp">
         <img src="images/camp.jpg" alt="Colourful tents pitched below the hill" loading="lazy">
         <div>
           <h3>Camping &amp; cave trail</h3>
@@ -89,7 +84,7 @@
           <a class="btn" href="#book">Book campsite</a>
         </div>
       </article>
-      <article class="pillar">
+      <article class="pillar reveal stagger-3">
         <img src="images/statue.jpg" alt="Recycled metal sculpture of a woman carrying a basket, backlit by the sun" loading="lazy">
         <div>
           <h3>Art gallery &amp; store</h3>
@@ -103,7 +98,7 @@
 
 <section class="mapsec" id="explore">
   <div class="wrap">
-    <div class="map-header-row">
+    <div class="map-header-row reveal">
       <div>
         <h2 style="font-size:clamp(2rem,5vw,3.4rem)">Find your way around</h2>
         <p class="lede" style="margin-top:.8rem">Explore the valley grounds, campsite, and trail to Leopards Hill caves. Tap any marker for walking times, exact Plus Codes, and Google Maps directions.</p>
@@ -114,7 +109,7 @@
       </div>
     </div>
 
-    <div class="mapgrid">
+    <div class="mapgrid reveal stagger-1">
       <div class="map" id="mapTrailView">
         <svg viewBox="0 0 800 470" role="img" aria-label="Illustrated map of Tree House Cafe, Leopards Hill Road, campsite, Leopards Hill and Leopards Hill caves">
           <g fill="none" stroke="#6d8a74" stroke-width="2">
@@ -170,7 +165,7 @@
           </g>
           <g transform="translate(70 400)" stroke="#0B362C" fill="#0B362C">
             <circle r="26" fill="none" stroke-width="2"/>
-            <path d="M0-22L5 0 0 22-5 0z"/>
+            <path class="compass-needle" d="M0-22L5 0 0 22-5 0z"/>
             <text x="-4" y="-32" stroke="none" font-size="13" font-weight="700">N</text>
           </g>
         </svg>
@@ -197,7 +192,7 @@
     </div>
 
     <!-- Highlighted Location Cards -->
-    <div class="map-locations">
+    <div class="map-locations reveal stagger-2">
       <div class="map-location-card">
         <div>
           <h4>Tree House Cafe</h4>
@@ -235,7 +230,7 @@
 
 <section id="store">
   <div class="wrap">
-    <div class="head">
+    <div class="head reveal">
       <div>
         <h2>Online store</h2>
         <p class="lede">Pieces from the gallery and the collection. Ask about any item and we'll reply with price and shipping.</p>
@@ -246,7 +241,7 @@
       </div>
     </div>
     <div class="rail" id="rail">
-      <article class="item">
+      <article class="item reveal stagger-1">
         <img src="images/statue.jpg" alt="Recycled metal sculpture" loading="lazy">
         <div>
           <h3>Water Carrier</h3>
@@ -257,7 +252,7 @@
           </div>
         </div>
       </article>
-      <article class="item">
+      <article class="item reveal stagger-2">
         <img src="images/cross.jpg" alt="Antique copper cross in a presentation box" loading="lazy">
         <div>
           <h3>Copper cross currency</h3>
@@ -268,7 +263,7 @@
           </div>
         </div>
       </article>
-      <article class="item">
+      <article class="item reveal stagger-3">
         <img src="images/type.jpg" alt="Olympia typewriter and coffee grinder on a steel shelf" loading="lazy">
         <div>
           <h3>Olympia typewriter</h3>
@@ -279,7 +274,7 @@
           </div>
         </div>
       </article>
-      <article class="item">
+      <article class="item reveal stagger-1">
         <img src="images/radio.jpg" alt="Vintage Panasonic stereo beside an carved wooden comb" loading="lazy">
         <div>
           <h3>Carved wooden comb</h3>
@@ -290,7 +285,7 @@
           </div>
         </div>
       </article>
-      <article class="item">
+      <article class="item reveal stagger-2">
         <img src="images/tv.jpg" alt="Vintage Sony television" loading="lazy">
         <div>
           <h3>Sony Trinitron-era TV</h3>
@@ -306,7 +301,7 @@
 </section>
 
 <section style="background:var(--surface)">
-  <div class="wrap split">
+  <div class="wrap split reveal">
     <img src="images/building.jpg" alt="The open-air cafe sitting on a rock terrace below the hill" loading="lazy">
     <div>
       <h2>Built into the hillside</h2>
@@ -322,8 +317,8 @@
 
 <section>
   <div class="wrap">
-    <h2 style="font-size:clamp(2rem,5vw,3.4rem);margin-bottom:2rem">Golden hour, masks and mancala</h2>
-    <div class="gal">
+    <h2 class="reveal" style="font-size:clamp(2rem,5vw,3.4rem);margin-bottom:2rem">Golden hour, masks and mancala</h2>
+    <div class="gal reveal stagger-1">
       <img src="images/c1.jpg" alt="Collage of sunset, carved masks and a bao game" loading="lazy">
       <img src="images/c2.jpg" alt="Collage of sunsets over Leopards Hill and a sofa on the veranda" loading="lazy">
     </div>
@@ -332,10 +327,10 @@
 
 <section class="book" id="book">
   <div class="wrap">
-    <h2 style="font-size:clamp(2rem,5vw,3.4rem)">Reserve or enquire</h2>
-    <p class="lede" style="margin-top:.8rem">Tell us what you're after and we'll confirm right away. Submit via the form or reach out directly on WhatsApp for immediate confirmation.</p>
+    <h2 class="reveal" style="font-size:clamp(2rem,5vw,3.4rem)">Reserve or enquire</h2>
+    <p class="lede reveal stagger-1" style="margin-top:.8rem">Tell us what you're after and we'll confirm right away. Submit via the form or reach out directly on WhatsApp for immediate confirmation.</p>
     
-    <div class="book-grid">
+    <div class="book-grid reveal stagger-2">
       <form id="f">
         <label>Name<input required name="n" autocomplete="name" placeholder="Your name"></label>
         <label>Phone or email<input required name="c" placeholder="+260 ... or email"></label>
