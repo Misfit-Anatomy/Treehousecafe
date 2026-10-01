@@ -37,14 +37,21 @@
   </div>
 </nav>
 
-<header class="hero" style="--hero:url(images/view.jpg)">
+<header class="hero" id="heroHeader">
+  <img src="images/header%20image.jpg" alt="Treehouse Cafe - Leopards Hill, Zambia" class="hero-bg" id="heroBgImg" fetchpriority="high">
+  <div class="hero-overlay"></div>
   <div class="wrap">
     <div class="hero-badge">
       <img src="images/logo.svg" alt="Treehouse Cafe Logo" class="hero-logo" width="26" height="26">
       <span>Leopards Hill, Zambia</span>
     </div>
     <h1>Treehouse Cafe</h1>
-    <p>Coffee, camping, art and a hill to climb. All in one valley.</p>
+    <div class="hero-taglines" aria-label="Coffee, Art, Camping, And a hill to climb">
+      <span class="hero-line hero-line-1">Coffee.</span>
+      <span class="hero-line hero-line-2">Art.</span>
+      <span class="hero-line hero-line-3">Camping.</span>
+      <span class="hero-line hero-line-4">And a hill to climb.</span>
+    </div>
     <div class="row">
       <a class="btn" href="#book">Reserve a table or campsite</a>
       <a class="btn btn-whatsapp" href="https://wa.me/260970000000?text=Hi%20Treehouse%20Cafe%2C%20I%27d%20like%20to%20plan%20a%20visit" target="_blank" rel="noopener noreferrer">
@@ -52,6 +59,11 @@
         <span>Chat on WhatsApp</span>
       </a>
       <a class="btn ghost" href="#explore">See the trails</a>
+      <label class="btn ghost btn-upload-header" title="Upload new header image file">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
+        <span>Upload "header image.jpg"</span>
+        <input type="file" id="headerImgInput" accept="image/*" style="display:none">
+      </label>
     </div>
   </div>
 </header>

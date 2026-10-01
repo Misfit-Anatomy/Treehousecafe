@@ -181,3 +181,33 @@ if (f) {
     }
   };
 }
+
+// Interactive Header Image file upload
+const headerImgInput = document.getElementById('headerImgInput');
+const heroBgImg = document.getElementById('heroBgImg');
+
+if (headerImgInput) {
+  headerImgInput.addEventListener('change', e => {
+    const file = e.target.files && e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = async event => {
+      const base64 = event.target.result;
+      if (heroBgImg) {
+        heroBgImg.src = base64;
+      }
+
+      try {
+        await fetch('/api/upload-header', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ imageBase64: base64 })
+        });
+      } catch (err) {
+        console.error('Failed to sync header image to server:', err);
+      }
+    };
+    reader.readAsDataURL(file);
+  });
+}
