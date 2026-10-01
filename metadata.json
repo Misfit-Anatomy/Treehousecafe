@@ -1,0 +1,8 @@
+{
+  "name": "Treehouse Cafe",
+  "description": "Treehouse Cafe website featuring artisanal coffee, camping, art gallery, trail map, and reservation requests in Leopards Hill, Zambia.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

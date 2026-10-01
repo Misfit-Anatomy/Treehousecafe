@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" role="img" aria-label="Treehouse Cafe Logo">
+  <defs>
+    <radialGradient id="badgeGrad" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#124a3d"/>
+      <stop offset="65%" stop-color="#0B362C"/>
+      <stop offset="100%" stop-color="#051c16"/>
+    </radialGradient>
+    <radialGradient id="rimGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="88%" stop-color="transparent"/>
+      <stop offset="96%" stop-color="#0B362C" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0.85"/>
+    </radialGradient>
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer background circle -->
+  <circle cx="250" cy="250" r="242" fill="url(#badgeGrad)"/>
+  
+  <!-- Subtle inner boundary ring -->
+  <circle cx="250" cy="250" r="236" fill="none" stroke="#164d3f" stroke-width="4" opacity="0.6"/>
+  
+  <!-- Vignette overlay -->
+  <circle cx="250" cy="250" r="242" fill="url(#rimGrad)"/>
+
+  <!-- Tree Silhouette Group in #0A0A0A -->
+  <g fill="#0A0A0A" stroke="#0A0A0A">
+    <!-- Ground line -->
+    <line x1="56" y1="262" x2="444" y2="262" stroke="#0A0A0A" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Tree Trunk and main roots -->
+    <path d="M 230 262 C 232 248, 237 230, 238 214 C 233 204, 222 195, 208 190 C 205 194, 200 196, 192 194 C 188 186, 195 178, 204 176 C 218 174, 228 184, 234 195 C 238 188, 240 178, 241 166 C 235 158, 226 150, 214 148 C 210 152, 204 152, 199 148 C 202 142, 209 138, 218 138 C 230 139, 239 146, 244 156 C 247 142, 249 128, 250 114 C 251 128, 253 142, 256 156 C 261 146, 270 139, 282 138 C 291 138, 298 142, 301 148 C 296 152, 290 152, 286 148 C 274 150, 265 158, 259 166 C 260 178, 262 188, 266 195 C 272 184, 282 174, 296 176 C 305 178, 312 186, 308 194 C 300 196, 295 194, 292 190 C 278 195, 267 204, 262 214 C 263 230, 268 248, 270 262 Z" />
+    <!-- Root flares -->
+    <path d="M 224 262 C 228 255, 234 250, 240 248 L 260 248 C 266 250, 272 255, 276 262 Z" />
+
+    <!-- Secondary Branches Left -->
+    <path d="M 226 218 Q 200 205 174 212 Q 155 218 140 228" fill="none" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 200 206 Q 182 188 160 186 Q 146 186 132 192" fill="none" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 215 188 Q 192 165 168 160 Q 152 158 140 166" fill="none" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 235 175 Q 212 152 190 144 Q 175 140 162 148" fill="none" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 242 150 Q 224 130 202 122 Q 188 118 178 124" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 248 130 Q 236 108 218 96 Q 205 88 194 92" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Secondary Branches Right -->
+    <path d="M 274 218 Q 300 205 326 212 Q 345 218 360 228" fill="none" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 300 206 Q 318 188 340 186 Q 354 186 368 192" fill="none" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 285 188 Q 308 165 332 160 Q 348 158 360 166" fill="none" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 265 175 Q 288 152 310 144 Q 325 140 338 148" fill="none" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 258 150 Q 276 130 298 122 Q 312 118 322 124" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 252 130 Q 264 108 282 96 Q 295 88 306 92" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Top Center Branches -->
+    <path d="M 250 114 Q 242 85 240 68" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 250 114 Q 258 85 260 68" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Canopy Leaf Clusters (Upper Foliage) -->
+    <!-- Top Apex -->
+    <ellipse cx="250" cy="74" rx="28" ry="16"/>
+    <ellipse cx="236" cy="66" rx="20" ry="14"/>
+    <ellipse cx="264" cy="66" rx="20" ry="14"/>
+    <ellipse cx="220" cy="78" rx="22" ry="14"/>
+    <ellipse cx="280" cy="78" rx="22" ry="14"/>
+
+    <!-- Upper Tier Left -->
+    <ellipse cx="196" cy="88" rx="25" ry="16"/>
+    <ellipse cx="175" cy="100" rx="24" ry="15"/>
+    <ellipse cx="158" cy="116" rx="26" ry="16"/>
+    <ellipse cx="184" cy="112" rx="28" ry="18"/>
+    <ellipse cx="212" cy="102" rx="26" ry="16"/>
+
+    <!-- Upper Tier Right -->
+    <ellipse cx="304" cy="88" rx="25" ry="16"/>
+    <ellipse cx="325" cy="100" rx="24" ry="15"/>
+    <ellipse cx="342" cy="116" rx="26" ry="16"/>
+    <ellipse cx="316" cy="112" rx="28" ry="18"/>
+    <ellipse cx="288" cy="102" rx="26" ry="16"/>
+
+    <!-- Mid Tier Left -->
+    <ellipse cx="140" cy="136" rx="26" ry="17"/>
+    <ellipse cx="160" cy="140" rx="28" ry="18"/>
+    <ellipse cx="182" cy="134" rx="26" ry="16"/>
+    <ellipse cx="128" cy="158" rx="26" ry="16"/>
+    <ellipse cx="148" cy="164" rx="28" ry="18"/>
+    <ellipse cx="174" cy="160" rx="27" ry="17"/>
+    <ellipse cx="198" cy="152" rx="24" ry="15"/>
+
+    <!-- Mid Tier Center -->
+    <ellipse cx="230" cy="120" rx="26" ry="18"/>
+    <ellipse cx="270" cy="120" rx="26" ry="18"/>
+    <ellipse cx="250" cy="135" rx="30" ry="20"/>
+    <ellipse cx="225" cy="150" rx="26" ry="17"/>
+    <ellipse cx="275" cy="150" rx="26" ry="17"/>
+    <ellipse cx="250" cy="165" rx="28" ry="18"/>
+
+    <!-- Mid Tier Right -->
+    <ellipse cx="360" cy="136" rx="26" ry="17"/>
+    <ellipse cx="340" cy="140" rx="28" ry="18"/>
+    <ellipse cx="318" cy="134" rx="26" ry="16"/>
+    <ellipse cx="372" cy="158" rx="26" ry="16"/>
+    <ellipse cx="352" cy="164" rx="28" ry="18"/>
+    <ellipse cx="326" cy="160" rx="27" ry="17"/>
+    <ellipse cx="302" cy="152" rx="24" ry="15"/>
+
+    <!-- Lower Tier Left (Widest Spread) -->
+    <ellipse cx="116" cy="182" rx="26" ry="17"/>
+    <ellipse cx="138" cy="190" rx="30" ry="19"/>
+    <ellipse cx="164" cy="186" rx="28" ry="18"/>
+    <ellipse cx="108" cy="208" rx="24" ry="16"/>
+    <ellipse cx="128" cy="216" rx="28" ry="18"/>
+    <ellipse cx="154" cy="212" rx="30" ry="19"/>
+    <ellipse cx="180" cy="204" rx="27" ry="17"/>
+    <ellipse cx="122" cy="236" rx="25" ry="16"/>
+    <ellipse cx="145" cy="242" rx="28" ry="18"/>
+    <ellipse cx="170" cy="236" rx="26" ry="17"/>
+
+    <!-- Lower Tier Right (Widest Spread) -->
+    <ellipse cx="384" cy="182" rx="26" ry="17"/>
+    <ellipse cx="362" cy="190" rx="30" ry="19"/>
+    <ellipse cx="336" cy="186" rx="28" ry="18"/>
+    <ellipse cx="392" cy="208" rx="24" ry="16"/>
+    <ellipse cx="372" cy="216" rx="28" ry="18"/>
+    <ellipse cx="346" cy="212" rx="30" ry="19"/>
+    <ellipse cx="320" cy="204" rx="27" ry="17"/>
+    <ellipse cx="378" cy="236" rx="25" ry="16"/>
+    <ellipse cx="355" cy="242" rx="28" ry="18"/>
+    <ellipse cx="330" cy="236" rx="26" ry="17"/>
+
+    <!-- Subtle texture leaves / organic silhouettes -->
+    <circle cx="100" cy="195" r="9"/>
+    <circle cx="400" cy="195" r="9"/>
+    <circle cx="112" cy="225" r="10"/>
+    <circle cx="388" cy="225" r="10"/>
+    <circle cx="128" cy="145" r="10"/>
+    <circle cx="372" cy="145" r="10"/>
+    <circle cx="152" cy="95" r="9"/>
+    <circle cx="348" cy="95" r="9"/>
+    <circle cx="210" cy="62" r="8"/>
+    <circle cx="290" cy="62" r="8"/>
+    <circle cx="250" cy="55" r="8"/>
+  </g>
+
+  <!-- Typography in Warm Honey Gold (#E5B84A / #D4A338) -->
+  <g id="logoText" filter="url(#subtleGlow)">
+    <!-- "TREEHOUSE" -->
+    <text x="250" y="324" text-anchor="middle"
+          font-family="'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+          font-size="44"
+          font-weight="800"
+          letter-spacing="9"
+          fill="#E5B84A">TREEHOUSE</text>
+    
+    <!-- "CAFE" -->
+    <text x="250" y="366" text-anchor="middle"
+          font-family="'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+          font-size="26"
+          font-weight="600"
+          letter-spacing="16"
+          fill="#E5B84A">CAFE</text>
+  </g>
+</svg>

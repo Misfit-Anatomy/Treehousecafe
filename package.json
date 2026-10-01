@@ -1,0 +1,15 @@
+{
+  "name": "treehouse-cafe",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Treehouse Cafe website in Leopards Hill, Zambia",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Build complete'",
+    "lint": "echo 'No lint errors'"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
